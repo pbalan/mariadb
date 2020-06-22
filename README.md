@@ -18,25 +18,25 @@ brew services list
 ```
 
 Expected output
-======== ======
+===============
 
-Name       Status  User   Plist
-dnsmasq    started root   /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
-**mariadb    started root   /Library/LaunchDaemons/homebrew.mxcl.mariadb.plist**
-nginx      started pbalan /Users/pbalan/Library/LaunchAgents/homebrew.mxcl.nginx.plist
-php        started pbalan /Users/pbalan/Library/LaunchAgents/homebrew.mxcl.php.plist
-php@7.2    started pbalan /Users/pbalan/Library/LaunchAgents/homebrew.mxcl.php@7.2.plist
-redis@3.2  started pbalan /Users/pbalan/Library/LaunchAgents/homebrew.mxcl.redis@3.2.plist
-supervisor started pbalan /Users/pbalan/Library/LaunchAgents/homebrew.mxcl.supervisor.plist
+|Name       |Status  |User   |Plist                                                            |
+|-----------|--------|-------|-----------------------------------------------------------------|
+|dnsmasq    |started |root   |/Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist               |
+|**mariadb**|started |root   |/Library/LaunchDaemons/homebrew.mxcl.mariadb.plist               |
+|nginx      |started |pbalan |/Users/pbalan/Library/LaunchAgents/homebrew.mxcl.nginx.plist     |
+|php        |started |pbalan |/Users/pbalan/Library/LaunchAgents/homebrew.mxcl.php.plist       |
+|php@7.2    |started |pbalan |/Users/pbalan/Library/LaunchAgents/homebrew.mxcl.php@7.2.plist   |
+|redis@3.2  |started |pbalan |/Users/pbalan/Library/LaunchAgents/homebrew.mxcl.redis@3.2.plist |
+|supervisor |started |pbalan |/Users/pbalan/Library/LaunchAgents/homebrew.mxcl.supervisor.plist|
 
 
 - Run the following command to stop the service
+> Note: Replace service with appropriate service name.
 
 ```
 brew services stop **service**
 ```
-
-> Replace service with appropriate service name.
 
 ## Spin up your container
 
@@ -46,7 +46,8 @@ docker-compose up -d
 
 ## Check if you can connect via SequelPro
 
-host     - host.docker.internal
-username - root
-password - root
+| Host                | Username         | Password      |
+|---------------------|------------------|---------------|
+| host.docker.internal| root             | root          |
+
 
